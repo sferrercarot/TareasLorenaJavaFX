@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.* ?>
+<?import javafx.scene.layout.* ?>
+<?import javafx.scene.Scene ?>
+<?import javafx.stage.* ?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.tarea5Controller">
+    <children>
+        <TableView fx:id="tableView">
+            <columns>
+                <TableColumn text="Nombre" fx:id="nombreColumn"/>
+                <TableColumn text="Apellidos" fx:id="apellidosColumn"/>
+                <TableColumn text="Edad" fx:id="edadColumn"/>
+            </columns>
+        </TableView>
+        <Button text="Agregar persona" onAction="#handleAgregarPersona" layoutX="10.0" layoutY="200.0"/>
+    </children>
+</AnchorPane>

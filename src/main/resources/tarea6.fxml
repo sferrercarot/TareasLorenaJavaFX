@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.tarea6Controller">
+    <children>
+        <TableView fx:id="tabla" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="nombreCol" text="Nombre"/>
+                <TableColumn fx:id="apellidosCol" text="Apellidos"/>
+                <TableColumn fx:id="edadCol" text="Edad"/>
+            </columns>
+        </TableView>
+
+        <TextField fx:id="nombreField" promptText="Nombre" layoutX="420.0" layoutY="20.0" />
+        <TextField fx:id="apellidosField" promptText="Apellidos" layoutX="420.0" layoutY="60.0" />
+        <TextField fx:id="edadField" promptText="Edad" layoutX="420.0" layoutY="100.0" />
+
+        <Button text="Agregar persona" layoutX="420.0" layoutY="140.0" onAction="#agregarPersona"/>
+        <Button text="Modificar persona" layoutX="520.0" layoutY="140.0" onAction="#modificarPersona"/>
+        <Button text="Eliminar persona" layoutX="620.0" layoutY="140.0" onAction="#eliminarPersona"/>
+    </children>
+</AnchorPane>

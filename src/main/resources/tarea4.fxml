@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.tarea4Controller">
+    <Label text="Nombre" layoutX="14" layoutY="14"/>
+    <TextField fx:id="txtNombre" layoutX="70" layoutY="10"/>
+
+    <Label text="Apellidos" layoutX="14" layoutY="40"/>
+    <TextField fx:id="txtApellidos" layoutX="70" layoutY="36"/>
+
+    <Label text="Edad" layoutX="14" layoutY="66"/>
+    <TextField fx:id="txtEdad" layoutX="70" layoutY="62"/>
+
+    <Button text="Agregar persona" layoutX="14" layoutY="100" onAction="#agregarPersona"/>
+    <Button text="Modificar" layoutX="150" layoutY="100" onAction="#modificarPersona"/>
+    <Button text="Eliminar" layoutX="218" layoutY="100" onAction="#eliminarPersona"/>
+
+    <TableView fx:id="tableView" layoutX="14" layoutY="140">
+        <columns>
+            <TableColumn fx:id="colNombre" text="Nombre"/>
+            <TableColumn fx:id="colApellidos" text="Apellidos"/>
+            <TableColumn fx:id="colEdad" text="Edad"/>
+        </columns>
+    </TableView>
+</AnchorPane>

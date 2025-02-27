@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.tarea2Controller">
+
+    <children>
+        <Label layoutX="20" layoutY="20" text="Operando 1"/>
+        <TextField fx:id="txtOperando1" layoutX="120" layoutY="20"/>
+
+        <Label layoutX="20" layoutY="60" text="Operando 2"/>
+        <TextField fx:id="txtOperando2" layoutX="120" layoutY="60"/>
+
+        <Button fx:id="btnOperar" text="Operar" layoutX="120" layoutY="100" onAction="#realizarOperacion"/>
+
+        <RadioButton fx:id="rbSuma" text="Suma" layoutX="40" layoutY="140"/>
+        <RadioButton fx:id="rbResta" text="Resta" layoutX="120" layoutY="140"/>
+        <RadioButton fx:id="rbMultiplicacion" text="Multiplicación" layoutX="40" layoutY="170"/>
+        <RadioButton fx:id="rbDivision" text="División" layoutX="120" layoutY="170"/>
+
+        <Label layoutX="20" layoutY="210" text="Resultado"/>
+        <TextField fx:id="txtResultado" layoutX="120" layoutY="210" editable="false"/>
+    </children>
+
+</AnchorPane>

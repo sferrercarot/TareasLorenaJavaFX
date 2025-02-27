@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.tarea3Controller">
+    <children>
+        <TextField fx:id="nombreField" layoutX="50.0" layoutY="50.0" promptText="Nombre"/>
+        <TextField fx:id="apellidosField" layoutX="50.0" layoutY="100.0" promptText="Apellidos"/>
+        <TextField fx:id="edadField" layoutX="50.0" layoutY="150.0" promptText="Edad"/>
+        <Button fx:id="agregarButton" layoutX="50.0" layoutY="200.0" text="Agregar persona"/>
+
+        <TableView fx:id="tableView" layoutX="250.0" layoutY="50.0" prefHeight="300.0" prefWidth="300.0">
+            <columns>
+                <TableColumn fx:id="nombreColumn" text="Nombre" />
+                <TableColumn fx:id="apellidosColumn" text="Apellidos" />
+                <TableColumn fx:id="edadColumn" text="Edad" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
